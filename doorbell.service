@@ -1,0 +1,15 @@
+[Unit]
+Description=Doorbell application. MQTT client to Shelly devices
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/martin/doorbell.py
+StandardOutput=null
+User=martin
+RestartSec=5s
+Restart=always 
+RemainAfterExit=true
+#on-failure
+
+[Install]
+WantedBy=multi-user.target

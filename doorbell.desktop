@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Clock
+Exec=/usr/bin/python /home/martin/doorbell.py

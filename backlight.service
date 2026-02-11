@@ -1,0 +1,11 @@
+[Unit]
+Description=TFT Backlight
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/martin/backlight.py
+StandardOutput=null
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
